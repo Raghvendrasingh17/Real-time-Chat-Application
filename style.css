@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #1da1f2;
+}
+
+.container{
+    background: #fff;
+    max-width: 475px;
+    width: 100%;
+    border-radius: 15px;
+    padding: 25px 25px 15px 25px;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+  }
+
+  /* Container header design starts */
+  a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #0a7dc5;
+    font-weight: 700;
+  }
+
+  #dp img{
+    width: 60px;
+    border-radius: 50%;
+  }
+.links{
+    font-size: 15px;
+}
+  div span img{
+    width: 15px;
+  }
+#username{
+    color: grey;
+}
+  .header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.name{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+#text-container {
+    border: none;
+    width: 100%;
+    height: 150px;
+    resize: none;
+    padding: 10px 14px;
+    box-sizing: border-box;
+    font-size: 18px;
+    outline: none;
+    background-color: #fcfcfc; 
+    border-radius: 10px;
+    transition: box-shadow 0.2s ease; 
+}
+#text-container::placeholder{
+    font-size: medium;
+    color: rgb(179, 177, 177);
+}
+#text-container:focus {
+    outline: none;
+    background-color: #f3f3f3; 
+}
+#text-container {
+    transition: background-color 0.3s ease; 
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: gainsboro;
+    margin: auto;
+    margin: 4px 0px;
+}
+/* Container header design ends */
+
+
+/* Container footer design starts */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.time-date {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+.tweet-btn{
+    background: #1da1f2;
+    padding: 6px 12px;
+    border-radius: 25px;
+    font-weight: 600;
+}
+.footer a{
+    color: white;
+}
+
+/* Classes applied using JS based on user interactions */
+.js-active{
+    cursor: pointer;
+    background-color: #1da1f2;
+}
+.js-disable{
+    cursor: not-allowed;
+    background: #93d1f5;
+}
+/* Container footer design ends */
+
+/* Real Time Character Counter Section - DESIGN */
+.real-time {
+    background-color: #e7ffba; 
+    padding: 20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: center;
+}
+.row-wise{
+    display: flex;
+    justify-content: space-between;
+}
+.real-time h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+    font-family: 'Courier New', Courier, monospace;
+}
+.real-time .total-char,
+.real-time .remaining {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    color: #666;
+}
+.row-wise div{
+    font-weight: 600;
+}
+#total{
+    color: green;
+}
+#remain{
+    color: red;
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 768px) {
+    body{
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    .container{
+        padding: 14px 20px;  
+      }
+    .container{
+        width: 90%;
+      }
+      .real-time{
+        padding: 10px;
+        margin-top: 0px;
+      }
+      .real-time h1 {
+        font-size: 20px;
+      }
+}

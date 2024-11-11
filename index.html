@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Time Chat Application</title>
+    <meta name="description" content="A simple real-time character counter with tweet button functionality, inspired by Twitter's tweet input feature.">
+    <meta name="author" content="Kishore S R">
+    <meta name="keywords" content="Character Counter, Real-time counter, Twitter-like counter, JavaScript project, Tweet input feature">
+
+    <link rel="shortcut icon" href="assets/counter-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div id="dp">
+                <img src="assets/profile-pic.png" alt="profile">
+            </div>
+            <div>
+                <div>
+                    <span class="name"><b>Raghvendra Singh</b><img
+                            src="assets/verified.png"
+                            alt="tick"></span>
+                </div>
+                <div class="links">
+                    <span id="username">@yash_singh_rajpoot958 •</span>
+                    <span id="follow"><a href="https://www.instagram.com/yash_singh_rajpoot958?igsh=bTJlcmoycnFmNnNw">Follow</a></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-container">
+            <textarea name="text-container" id="text-container" placeholder="What's your next project?" ></textarea>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="footer">
+            <div class="time-date" id="time-date"></div>
+            <a class="tweet-btn" href="#">Send</a>
+        </div>
+
+    </div>
+    <main class="real-time">
+        <h1>Real-Time Chat Application</h1>
+
+        <div class="row-wise">
+            <div class="total-char">Total Characters:<span id="total">90</span></div>
+            <div class="remaining">Remaining:<span id="remain">10</span></div>
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
