@@ -16,3 +16,4 @@ A simple project that counts characters in real-time, with a UI inspired by Twit
 [![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)](/)
 
 ### Website Preview
+[![Project Link](https://img.shields.io/badge/Website%20Link-37a779?style=for-the-badge)](https://real-time-chat-application01.netlify.app/)
